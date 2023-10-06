@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Menu byrger</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="ccs/srart.css">
+   <link rel="stylesheet" href="ccs/normalize.css">
+</head>
+
+<body>
+   <header>
+      <div class="header-bg">
+         <div class="container">
+            <div class="header-flex">
+               <div class="header-iteil">
+                  <a href="index.html" class="header-logo-mobul"></a>
+                  <div class="header-burger">
+                     <button class="burger" onclick="openModal()">
+                     </button>
+                  </div>
+                  <nav>
+                     <ul class="menu-heder">
+                        <li><a href="#" class="header-logo"></a></li>
+                        <li><a href="#">HEADER-BG</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">TICKETC</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <ul class="tel">
+                  <li class="li_tel"><a href="tel:+18938392364">+1 893 839-23-64</a></li>
+               </ul>
+            </div>
+            <div class="content">
+               <h1 class="title">
+                  THE EVENT.THE FIFE
+               </h1>
+               <h2 class="text"> BURNING MAN </h2>
+               <a class="bg" href="https://my.wayup.in/" target="_blank">Book the tickets</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section>
+      <div class="container">
+         <h2>About the event</h2>
+         <div class="wrapper">
+            <div class="offer">
+               <h3>Rebuilding the society</h3>
+               <p>Burning Man is a network of people inspired by the values reflected in the Ten Principles and united
+                  in the pursuit of a more creative and connected existence in the world. Throughout the year we work to
+                  build Black Rock City, home of the largest annual Burning Man gathering, and nurture the distinctive
+                  culture emerging from that experience. </p>
+            </div>
+            <div class="offer">
+               <h3>This drives us</h3>
+               <p>Burning Man Project will bring experiences to people in grand, awe-inspiring and joyful ways that lift
+                  the human spirit, address social problems, and inspire a sense of culture, community, and civic
+                  engagement. Burning Man provides infrastructural tools and frameworks to support local communities in
+                  applying the Ten Principles through six interconnected program areas, including Arts, Civic
+                  Involvement, Culture, Education, Philosophical Center, and Social Enterprise.</p>
+            </div>
+         </div>
+         <div class="main">
+            <img class="main1" src="img/img1.png" alt="foto">
+            <img class="main2" src="img/img2.png" alt="foto">
+            <img class="main3" src="img/img3.png" alt="foto">
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-box">
+            <p class="footer-text">©1989-2020 burning man project</p>
+            <p class="footer-text">WAYUP & Андрей Гаврилов</p>
+            <ul class="footer-icon">
+               <li class="footer_icon fecbyk">
+                  <a class="fecbyk" href="https://www.facebook.com/wayup.in" target="_blank"></a>
+               </li>
+               <li class="footer_icon ytud">
+                  <a class="ytud" href="https://www.youtube.com/channel/UCrWP9UeNep74kW0cxY7YPpw" target="_blank"></a>
+               </li>
+               <li class="footer_icon instagram">
+                  <a class="instagram" href="https://www.instagram.com/wayup.in.official" target="_blank"></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+   <!-- Меню -->
+   <div id="modal" class="modal">
+      <a href="#" class="header-logo"></a>
+      <ul class="modal-menu-heder">
+         <li><a href="#">HEADER-BG</a></li>
+         <li><a href="#">ABOUT</a></li>
+         <li><a href="#">TICKETC</a></li>
+         <li><a href="#">CONTACTS</a></li>
+      </ul>
+      <button class="burger-close" onclick="closeModal()"></button>
+   </div>
+   <script>
+      // Menu
+      function openModal() {
+         document.getElementById("modal").style.top = "-30px";
+      }
+      function closeModal() {
+         document.getElementById("modal").style.top = "-500px";
+      }
+   </script>
+</body>
+
+</html>
