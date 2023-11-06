@@ -4,8 +4,7 @@ body {
 }
 
 .header-bg {
-   background-image: url(../img/header-bg.jpg);
-   max-width: 100%;
+   background: url(../img/header-bg.jpg) no-repeat center top / cover;
    height: 900px;
 }
 
